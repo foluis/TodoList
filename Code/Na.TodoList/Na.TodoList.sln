@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Na.TodoList.Entities", "Na.
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Na.TodoList.Database", "Na.TodoList.Database\Na.TodoList.Database.sqlproj", "{CE47DB17-A295-4C36-86D2-D08589EB15F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Na.TodoList.Domain", "Na.TodoList.Domain\Na.TodoList.Domain.csproj", "{2B76F3C4-C93F-4AF5-B1A0-285E04C883DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{CE47DB17-A295-4C36-86D2-D08589EB15F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE47DB17-A295-4C36-86D2-D08589EB15F4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CE47DB17-A295-4C36-86D2-D08589EB15F4}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{2B76F3C4-C93F-4AF5-B1A0-285E04C883DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B76F3C4-C93F-4AF5-B1A0-285E04C883DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B76F3C4-C93F-4AF5-B1A0-285E04C883DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B76F3C4-C93F-4AF5-B1A0-285E04C883DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -68,10 +68,10 @@
     <PostDeploy Include="Dbo\Script\Post-Deploy\Script.PostDeploy.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Dbo\Script\Post-Deploy\InitialTodos.sql" />
+    <None Include="Dbo\Script\Post-Deploy\InitialTasks.sql" />
     <None Include="Publish\Localhost.publish.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Dbo\Tables\ToDos.sql" />
+    <Build Include="Dbo\Tables\Todos.sql" />
   </ItemGroup>
 </Project>
