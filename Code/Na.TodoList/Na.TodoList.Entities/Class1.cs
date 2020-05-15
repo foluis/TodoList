@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Na.TodoList.Data
+namespace Na.TodoList.Entities
 {
     public class Class1
     {
