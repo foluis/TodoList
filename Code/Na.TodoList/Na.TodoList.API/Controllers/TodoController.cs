@@ -39,11 +39,13 @@ namespace Na.TodoList.API.Controllers
             {
                 string error = ex.ToString();
                 _logger.LogError(ex.ToString());
-                return StatusCode(StatusCodes.Status500InternalServerError, "Error retriving trigger paths from database");
+                //return StatusCode(StatusCodes.Status500InternalServerError, "Error retriving trigger paths from database");
+                return StatusCode(StatusCodes.Status500InternalServerError, error);
+
             }
         }
 
-        [HttpGet("[action]")]
+        [HttpGet("[action]/{id}")]
         public async Task<ActionResult> GetTodosById(int id)
         {
             try
@@ -74,7 +76,8 @@ namespace Na.TodoList.API.Controllers
             {
                 string error = ex.ToString();
                 _logger.LogError(error);
-                return StatusCode(StatusCodes.Status500InternalServerError, "Error creating todo data in database");
+                //return StatusCode(StatusCodes.Status500InternalServerError, "Error creating todo data in database");
+                return StatusCode(StatusCodes.Status500InternalServerError, error);
             }
         }
 

@@ -2,11 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Na.TodoList.Domain.ApiModels;
 
 namespace Na.TodoList.API.Controllers
 {
+    //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    //[Authorize]
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
@@ -23,6 +28,7 @@ namespace Na.TodoList.API.Controllers
             _logger = logger;
         }
 
+        [Authorize]
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
@@ -34,6 +40,19 @@ namespace Na.TodoList.API.Controllers
                 Summary = Summaries[rng.Next(Summaries.Length)]
             })
             .ToArray();
+        }
+
+        [HttpGet("[action]")]
+        public SimpleObject GetSimpleObject()
+        {
+            return new SimpleObject
+            {
+                Id = 1,
+                URL = "http://simple-form-bootstrap.plataformatec.com.br/documentation",
+                FieldId = "user_name",
+                ValueToInject = "2847394738245",
+                RequestTime = DateTime.Now
+            };
         }
     }
 }

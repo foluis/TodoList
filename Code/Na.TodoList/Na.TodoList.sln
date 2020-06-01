@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Na.TodoList.Domain", "Na.To
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Na.TodoList.API", "Na.TodoList.API\Na.TodoList.API.csproj", "{44218513-B62D-4492-9AB9-D99B10F48699}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Na.TodoList.ConsoleTest", "Na.TodoList.Console.Test\Na.TodoList.ConsoleTest.csproj", "{5E40DD93-4C24-4CBE-AB1A-E29BDBF5C5EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Na.TodoList.ConsoleTest", "Na.TodoList.Console.Test\Na.TodoList.ConsoleTest.csproj", "{5E40DD93-4C24-4CBE-AB1A-E29BDBF5C5EC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Na.TodoList.Web", "Na.TodoList.Web\Na.TodoList.Web.csproj", "{8C080EBA-C2AB-43B2-AA5B-003BB5C89FD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{5E40DD93-4C24-4CBE-AB1A-E29BDBF5C5EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E40DD93-4C24-4CBE-AB1A-E29BDBF5C5EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E40DD93-4C24-4CBE-AB1A-E29BDBF5C5EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C080EBA-C2AB-43B2-AA5B-003BB5C89FD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C080EBA-C2AB-43B2-AA5B-003BB5C89FD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C080EBA-C2AB-43B2-AA5B-003BB5C89FD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C080EBA-C2AB-43B2-AA5B-003BB5C89FD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
