@@ -8,7 +8,6 @@ namespace Na.TodoList.API.Services
 {
     public interface IAuthUserServices
     {
-        void CreateToken(AppUser userInfo);
-        //void CreateToken2(AppUser userInfo);
+        void CreateToken(AppUser userInfo);        
     }
 }

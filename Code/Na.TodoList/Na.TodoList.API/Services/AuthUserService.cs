@@ -43,23 +43,5 @@ namespace Na.TodoList.API.Services
 
             userInfo.Token = new JwtSecurityTokenHandler().WriteToken(token);
         }
-
-        //public void CreateToken2(AppUser userInfo)
-        //{          
-        //    // authentication successful so generate jwt token
-        //    var tokenHandler = new JwtSecurityTokenHandler();
-        //    var key = Encoding.ASCII.GetBytes(_config["Jwt:Key"]);
-        //    var tokenDescriptor = new SecurityTokenDescriptor
-        //    {
-        //        Subject = new ClaimsIdentity(new Claim[]
-        //        {
-        //            new Claim(ClaimTypes.Name, userInfo.Id.ToString())
-        //        }),
-        //        Expires = DateTime.UtcNow.AddDays(7),
-        //        SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
-        //    };
-        //    var token = tokenHandler.CreateToken(tokenDescriptor);
-        //    userInfo.Token2 = tokenHandler.WriteToken(token);
-        //}
     }
 }

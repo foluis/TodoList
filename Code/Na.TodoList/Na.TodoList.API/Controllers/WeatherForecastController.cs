@@ -9,9 +9,7 @@ using Microsoft.Extensions.Logging;
 using Na.TodoList.Domain.ApiModels;
 
 namespace Na.TodoList.API.Controllers
-{
-    //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-    //[Authorize]
+{   
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
@@ -27,8 +25,7 @@ namespace Na.TodoList.API.Controllers
         {
             _logger = logger;
         }
-
-        [Authorize]
+        
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {

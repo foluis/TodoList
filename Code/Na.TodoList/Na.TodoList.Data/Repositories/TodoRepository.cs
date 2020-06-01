@@ -45,10 +45,6 @@ namespace Na.TodoList.Data.Repositories
         {
             Todo currentExaVaultPath = await _context.Todos.FindAsync(todo.Id);
 
-            //currentExaVaultPath.Path = newExaVaultPathInfo.Path;
-            //currentExaVaultPath.EndPoint = newExaVaultPathInfo.EndPoint;
-            //currentExaVaultPath.IsActie = newExaVaultPathInfo.IsActie;
-
             _context.Entry(currentExaVaultPath).State = EntityState.Modified;
             return await _context.SaveChangesAsync();
         }

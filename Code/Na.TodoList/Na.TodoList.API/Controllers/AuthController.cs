@@ -27,8 +27,7 @@ namespace Na.TodoList.API.Controllers
             _auth = auth;
         }
 
-        [HttpPost("[action]")]
-        //public async Task<ActionResult> Authenticate([FromBody] ApiUser apiUser )
+        [HttpPost("[action]")]        
         public ActionResult Authenticate([FromBody] AuthenticateUser apiUser)
         {
             try
@@ -41,8 +40,7 @@ namespace Na.TodoList.API.Controllers
                 if (appUser == null)
                     return Ok("Wrong user or password");
                 
-                _auth.CreateToken(appUser);
-                //_auth.CreateToken2(appUser);
+                _auth.CreateToken(appUser);                
 
                 return Ok(appUser);
             }
