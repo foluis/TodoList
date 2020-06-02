@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Na.TodoList.API.Services;
 using Na.TodoList.Domain;
 using Na.TodoList.Domain.ApiModels;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Na.TodoList.API.Controllers
 {
@@ -27,20 +25,20 @@ namespace Na.TodoList.API.Controllers
             _auth = auth;
         }
 
-        [HttpPost("[action]")]        
+        [HttpPost("[action]")]
         public ActionResult Authenticate([FromBody] AuthenticateUser apiUser)
         {
             try
             {
-                if (apiUser == null || string.IsNullOrEmpty(apiUser.UserName) || string.IsNullOrEmpty(apiUser.Password))
+                if (apiUser == null || string.IsNullOrEmpty(apiUser.Username) || string.IsNullOrEmpty(apiUser.Password))
                     return BadRequest("Missing values");
 
-                var appUser = _users.SingleOrDefault(x => x.UserName == apiUser.UserName && x.Password == apiUser.Password);
+                var appUser = _users.SingleOrDefault(x => x.UserName == apiUser.Username && x.Password == apiUser.Password);
 
                 if (appUser == null)
                     return Ok("Wrong user or password");
-                
-                _auth.CreateToken(appUser);                
+
+                _auth.CreateToken(appUser);
 
                 return Ok(appUser);
             }

@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Net.Cache;
-using System.Text;
 
 namespace Na.TodoList.Domain.ApiModels
 {

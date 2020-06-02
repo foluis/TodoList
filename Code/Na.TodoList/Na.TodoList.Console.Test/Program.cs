@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.NetworkInformation;
-using System.Text;
 using System.Text.RegularExpressions;
 
 namespace Na.TodoList.ConsoleTest
@@ -53,7 +52,7 @@ namespace Na.TodoList.ConsoleTest
         {
             Uri uri = new Uri(urlx);
             string pingurl = string.Format("{0}", uri.Host);
-            string host = pingurl;            
+            string host = pingurl;
 
             Ping p = new Ping();
             try

@@ -73,6 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="Dbo\Tables\Todos.sql" />
+    <Build Include="Dbo\Tables\AppUser.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Na.TodoList.Database.refactorlog" />

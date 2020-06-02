@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Na.TodoList.Domain.ApiModels;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Na.TodoList.API.Controllers
-{   
+{
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
@@ -25,7 +22,7 @@ namespace Na.TodoList.API.Controllers
         {
             _logger = logger;
         }
-        
+
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {

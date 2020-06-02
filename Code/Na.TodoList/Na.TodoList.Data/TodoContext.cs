@@ -1,8 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Na.TodoList.Domain;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Na.TodoList.Data
 {
@@ -15,5 +12,7 @@ namespace Na.TodoList.Data
         }
 
         public DbSet<Todo> Todos { get; set; }
+
+        public DbSet<AppUser> AppUsers { get; set; }
     }
 }

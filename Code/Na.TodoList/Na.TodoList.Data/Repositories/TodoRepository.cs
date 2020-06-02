@@ -1,9 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Na.TodoList.Data.Interfaces;
 using Na.TodoList.Domain;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Na.TodoList.Data.Repositories

@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Na.TodoList.Data.Interfaces;
 using Na.TodoList.Domain;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Na.TodoList.API.Controllers
 {
@@ -89,9 +88,9 @@ namespace Na.TodoList.API.Controllers
             try
             {
                 if (newTodo == null)
-                    return BadRequest();           
+                    return BadRequest();
 
-                var result = await _repository.UpdateTodo(newTodo);        
+                var result = await _repository.UpdateTodo(newTodo);
                 return Ok(result);
             }
             catch (Exception ex)
